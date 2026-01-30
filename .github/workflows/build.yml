@@ -38,8 +38,8 @@ jobs:
       push: ${{ github.event_name != 'pull_request' }}
       set-meta-labels: true
       meta-images: |
-        crazymax/rtorrent-rutorrent
-        ghcr.io/crazy-max/rtorrent-rutorrent
+        brumatheus99/rtorrent-rutorrent
+        ghcr.io/brumatheus99/rtorrent-rutorrent
       meta-tags: |
         type=match,pattern=(.*)-r,group=1
         type=ref,event=pr
@@ -47,7 +47,7 @@ jobs:
       meta-labels: |
         org.opencontainers.image.title=rTorrent and ruTorrent
         org.opencontainers.image.description=rTorrent and ruTorrent
-        org.opencontainers.image.vendor=CrazyMax
+        org.opencontainers.image.vendor=brumatheus99
     secrets:
       registry-auths: |
         - registry: docker.io
